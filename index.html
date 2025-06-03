@@ -40,28 +40,46 @@
   </style>
 </head>
 <body>
+<!-- Header Fixo -->
+<!-- Header Fixo com Navbar Responsiva -->
+<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h1>IGREJA DE CRISTO</h1>
-      <p class="lead mt-3">“Deus deu. Nós anunciamos.”</p>
-      <p class="mt-4">Uma igreja fundada no amor. João 3:16–17</p>
-    </div>
-  </section>
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="logo-igreja.svg" alt="Logo Igreja de Cristo" style="height: 32px; margin-right: 8px;">
+      <span class="fw-bold text-dark">IGREJA DE CRISTO</span>
+    </a>
 
-  <!-- Captação de E-mails -->
-  <section class="form-section text-center">
-    <div class="container" style="max-width: 600px;">
-      <h2 class="mb-4" style="font-family: 'Playfair Display', serif;">Receba mensagens devocionais e convites especiais</h2>
-      <form>
-        <div class="mb-3">
-          <input type="email" class="form-control form-control-lg" placeholder="Digite seu e-mail" required>
-        </div>
-        <button type="submit" class="btn btn-gold btn-lg w-100">Receber Mensagens</button>
-      </form>
+    <!-- Botão mobile -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menu colapsável -->
+    <div class="collapse navbar-collapse mt-2 mt-md-0" id="menuPrincipal">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#sobre">Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#encontros">Encontros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#estudos">Estudos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#comunidade">Comunidade</a>
+        </li>
+        <li class="nav-item mt-3 mt-md-0">
+          <a class="btn btn-outline-dark rounded-pill px-3" href="#contato">Quero caminhar com Cristo</a>
+        </li>
+      </ul>
     </div>
-  </section>
+
+  </div>
+</nav>
+
 
 </body>
 </html>

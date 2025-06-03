@@ -1,72 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Igreja de Cristo</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body class="bg-light text-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Igreja de Cristo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+      color: #1D2D44;
+    }
+    .hero {
+      background: linear-gradient(to bottom, rgba(29, 45, 68, 0.8), rgba(29, 45, 68, 0.9)), url('https://source.unsplash.com/1600x900/?sky,light') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: 'Cinzel Decorative', serif;
+      font-size: 3rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .form-section {
+      background-color: #F2F2F2;
+      padding: 60px 20px;
+    }
+    .form-control, .btn {
+      border-radius: 30px;
+    }
+    .btn-gold {
+      background-color: #D4AF37;
+      color: #1D2D44;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Igreja de Cristo</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/sobre.html">Sobre</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class="nav-link" href="pages/contato.html">Contato</a></li>
-          </ul>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>IGREJA DE CRISTO</h1>
+      <p class="lead mt-3">“Deus deu. Nós anunciamos.”</p>
+      <p class="mt-4">Uma igreja fundada no amor. João 3:16–17</p>
+    </div>
+  </section>
+
+  <!-- Captação de E-mails -->
+  <section class="form-section text-center">
+    <div class="container" style="max-width: 600px;">
+      <h2 class="mb-4" style="font-family: 'Playfair Display', serif;">Receba mensagens devocionais e convites especiais</h2>
+      <form>
+        <div class="mb-3">
+          <input type="email" class="form-control form-control-lg" placeholder="Digite seu e-mail" required>
         </div>
-      </div>
-    </nav>
+        <button type="submit" class="btn btn-gold btn-lg w-100">Receber Mensagens</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Hero Section -->
-    <section class="text-center py-5 bg-white">
-      <div class="container">
-        <h1 class="display-5 fw-bold">Bem-vindo à Igreja de Cristo</h1>
-        <p class="lead text-muted">Um lugar de fé, amor e comunhão. Sinta-se em casa.</p>
-        <a href="pages/sobre.html" class="btn btn-dark px-4 rounded-pill mt-3">Conheça mais</a>
-      </div>
-    </section>
-
-    <!-- Destaques -->
-    <section class="py-5 bg-light">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-4 mb-4">
-            <h5 class="fw-semibold">📖 Palavra Viva</h5>
-            <p class="text-muted">Mensagens que edificam, transformam e guiam seu propósito.</p>
-          </div>
-          <div class="col-md-4 mb-4">
-            <h5 class="fw-semibold">🤝 Comunhão Verdadeira</h5>
-            <p class="text-muted">Uma família espiritual unida pela fé e pelo amor ao próximo.</p>
-          </div>
-          <div class="col-md-4 mb-4">
-            <h5 class="fw-semibold">🎶 Louvor Inspirador</h5>
-            <p class="text-muted">Momentos de adoração que conectam o coração com o céu.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer class="text-center py-4 bg-white border-top">
-      <p class="mb-0 text-muted small">© 2025 Igreja de Cristo. Todos os direitos reservados.</p>
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>

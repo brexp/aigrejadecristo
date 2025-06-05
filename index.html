@@ -4,191 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Igreja de Cristo</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-  <style>
-    body {
-      font-family: 'Inter', sans-serif;
-      background: linear-gradient(to bottom, #ffffff, #f2f2f2);
-      color: #1D2D44;
-    }
-    .hero {
-      background: linear-gradient(to bottom, rgba(29, 45, 68, 0.8), rgba(29, 45, 68, 0.9)), url('https://source.unsplash.com/1600x900/?sky,light') no-repeat center center;
-      background-size: cover;
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-    .hero h1 {
-      font-family: 'Cinzel Decorative', serif;
-      font-size: 3rem;
-    }
-    .hero p {
-      font-size: 1.2rem;
-    }
-    .form-section {
-      background-color: #F2F2F2;
-      padding: 60px 20px;
-    }
-    .form-control, .btn {
-      border-radius: 30px;
-    }
-    .btn-gold {
-      background-color: #D4AF37;
-      color: #1D2D44;
-      font-weight: bold;
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-<!-- Header Fixo -->
-<!-- Header Fixo com Navbar Responsiva -->
-<nav class="navbar navbar-expand-md navbar-light bg-white fixed-top shadow-sm">
-  <div class="container">
-
-    <!-- Logo -->
-    <a class="navbar-brand d-flex align-items-center" href="#">
-      <img src="logo-igreja.svg" alt="Logo Igreja de Cristo" style="height: 32px; margin-right: 8px;">
-      <span class="fw-bold text-dark">IGREJA DE CRISTO</span>
-    </a>
-
-    <!-- Botão mobile -->
-    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <!-- Menu colapsável -->
-    <div class="collapse navbar-collapse mt-2 mt-md-0" id="menuPrincipal">
-      <ul class="navbar-nav ms-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#sobre">Sobre</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#encontros">Encontros</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#estudos">Estudos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-dark" href="#comunidade">Comunidade</a>
-        </li>
-        <li class="nav-item mt-3 mt-md-0">
-          <a class="btn btn-outline-dark rounded-pill px-3" href="#contato">Quero caminhar com Cristo</a>
-        </li>
+<body class="font-sans text-slate-800">
+  <!-- Navegação fixa -->
+  <nav class="fixed top-0 left-0 right-0 bg-white shadow">
+    <div class="max-w-7xl mx-auto flex items-center justify-between p-4">
+      <a href="#" class="flex items-center gap-2 font-bold text-slate-800">
+        <img src="logo-igreja.svg" alt="Logo Igreja de Cristo" class="h-8">
+        IGREJA DE CRISTO
+      </a>
+      <ul class="hidden md:flex gap-6 text-sm font-medium">
+        <li><a href="#sobre" class="hover:text-indigo-700">Sobre</a></li>
+        <li><a href="#encontros" class="hover:text-indigo-700">Encontros</a></li>
+        <li><a href="#estudos" class="hover:text-indigo-700">Estudos</a></li>
+        <li><a href="#comunidade" class="hover:text-indigo-700">Comunidade</a></li>
       </ul>
+      <a href="#contato" class="hidden md:inline-block bg-white border border-slate-800 rounded-full px-4 py-2 text-sm font-semibold hover:bg-slate-50">Quero caminhar com Cristo</a>
     </div>
+  </nav>
 
-  </div>
-</nav>
-
-
-<!-- Seção Hero com fundo gradiente e foco mobile -->
-<section class="d-flex align-items-center text-center text-white" style="min-height: 100vh; background: linear-gradient(180deg, #1D2D44, #0F1A2E); padding-top: 100px;">
-  <div class="container px-4">
-
-    <!-- Título Principal -->
-    <h1 class="display-5 fw-bold mb-3" style="line-height: 1.3;">
-      Deus deu.<br> Nós anunciamos.
-    </h1>
-
-    <!-- Versículo de apoio -->
-    <p class="lead mb-4" style="max-width: 480px; margin: 0 auto;">
-      “Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito...” <br><small>João 3:16</small>
-    </p>
-
-    <!-- Botão de ação -->
-    <a href="#manifesto" class="btn btn-light btn-lg rounded-pill px-4 shadow-sm">
-      Entenda o propósito
-    </a>
-
-  </div>
-</section>
-
-
-<section id="manifesto" class="py-5" style="background: linear-gradient(160deg, #0D1726 0%, #1D2D44 100%);">
-  <div class="container px-4 text-white">
-
-    <!-- Título e Subtítulo -->
-    <div class="text-center mb-5">
-      <p class="text-uppercase text-white-50 small mb-2">Manifesto</p>
-      <h2 class="display-6 fw-bold mb-3">Uma resposta</h2>
-      <p class="lead text-white-50 mx-auto" style="max-width: 600px;">
-         O que vemos hoje não reflete o evangelho.
-      </p>
+  <!-- Hero -->
+  <section class="flex items-center justify-center text-center text-white min-h-screen bg-gradient-to-b from-slate-800 to-slate-950 pt-24">
+    <div class="px-4">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Deus deu.<br> Nós anunciamos.</h1>
+      <p class="mb-6 max-w-md mx-auto">“Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito...” <br><small>João 3:16</small></p>
+      <a href="#manifesto" class="inline-block bg-white text-slate-900 font-semibold rounded-full px-6 py-3">Entenda o propósito</a>
     </div>
+  </section>
 
-    <!-- Acordeão -->
-    <div class="accordion accordion-flush" id="accordionManifesto">
-
-      <!-- Item 1 - Aberto por padrão -->
-      <div class="accordion-item bg-transparent border-top border-secondary">
-        <h2 class="accordion-header" id="headingOne">
-          <button class="accordion-button text-white fw-semibold bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-            O alerta
-          </button>
-        </h2>
-        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionManifesto">
-          <div class="accordion-body text-white-50">
-            Como explicar a fome, a corrupção e a desigualdade num país que se diz cristão? Isso não é reflexo de Cristo.
-          </div>
-        </div>
+  <!-- Manifesto -->
+  <section id="manifesto" class="py-16 bg-gradient-to-br from-slate-900 to-slate-700 text-white">
+    <div class="max-w-3xl mx-auto px-4">
+      <div class="text-center mb-8">
+        <p class="uppercase text-sm text-slate-300 mb-2">Manifesto</p>
+        <h2 class="text-3xl font-bold mb-3">Uma resposta</h2>
+        <p class="text-slate-300">O que vemos hoje não reflete o evangelho.</p>
       </div>
-
-      <!-- Item 2 -->
-      <div class="accordion-item bg-transparent border-top border-secondary">
-        <h2 class="accordion-header" id="headingTwo">
-          <button class="accordion-button collapsed text-white fw-semibold bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            O confronto
-          </button>
-        </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionManifesto">
-          <div class="accordion-body text-white-50">
-            Precisamos admitir: não estamos vivendo o evangelho verdadeiro. Ser cristão é mais do que aparência.
-          </div>
-        </div>
+      <div class="space-y-4">
+        <details open class="bg-slate-800 rounded-md">
+          <summary class="cursor-pointer px-4 py-3 font-semibold">O alerta</summary>
+          <p class="px-4 pb-4 text-slate-300">Como explicar a fome, a corrupção e a desigualdade num país que se diz cristão? Isso não é reflexo de Cristo.</p>
+        </details>
+        <details class="bg-slate-800 rounded-md">
+          <summary class="cursor-pointer px-4 py-3 font-semibold">O confronto</summary>
+          <p class="px-4 pb-4 text-slate-300">Precisamos admitir: não estamos vivendo o evangelho verdadeiro. Ser cristão é mais do que aparência.</p>
+        </details>
+        <details class="bg-slate-800 rounded-md">
+          <summary class="cursor-pointer px-4 py-3 font-semibold">A essência</summary>
+          <p class="px-4 pb-4 text-slate-300">Ser cristão é crer em Jesus e viver pela ação real do Espírito. Fé verdadeira gera frutos reais.</p>
+        </details>
+        <details class="bg-slate-800 rounded-md">
+          <summary class="cursor-pointer px-4 py-3 font-semibold">O chamado</summary>
+          <p class="px-4 pb-4 text-slate-300">A Igreja de Cristo é a resposta: um retorno às Escrituras, à cruz e à verdade. Viva o evangelho como ele é.</p>
+        </details>
       </div>
-
-      <!-- Item 3 -->
-      <div class="accordion-item bg-transparent border-top border-secondary">
-        <h2 class="accordion-header" id="headingThree">
-          <button class="accordion-button collapsed text-white fw-semibold bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            A essência
-          </button>
-        </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionManifesto">
-          <div class="accordion-body text-white-50">
-            Ser cristão é crer em Jesus e viver pela ação real do Espírito. Fé verdadeira gera frutos reais.
-          </div>
-        </div>
+      <div class="mt-8 rounded-lg overflow-hidden shadow-lg">
+        <img src="https://images.unsplash.com/photo-1555892727-55b51e5fceae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cruz no céu" class="w-full">
       </div>
-
-      <!-- Item 4 -->
-      <div class="accordion-item bg-transparent border-top border-secondary">
-        <h2 class="accordion-header" id="headingFour">
-          <button class="accordion-button collapsed text-white fw-semibold bg-transparent" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            O chamado
-          </button>
-        </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionManifesto">
-          <div class="accordion-body text-white-50">
-            A Igreja de Cristo é a resposta: um retorno às Escrituras, à cruz e à verdade. Viva o evangelho como ele é.
-          </div>
-        </div>
-      </div>
-
     </div>
-
-    <!-- Imagem Final -->
-    <div class="mt-5 rounded-4 overflow-hidden shadow-sm">
-      <img src="https://images.unsplash.com/photo-1555892727-55b51e5fceae?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Cruz no céu" class="img-fluid w-100 rounded-4">
-    </div>
-
-  </div>
-</section>
-
-
-
-
+  </section>
 </body>
 </html>
